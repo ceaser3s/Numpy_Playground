@@ -1,0 +1,43 @@
+{
+ "students": {
+  "file": "data/students.csv",
+  "rows": 600,
+  "desc": "Exam results and body measurements of 600 students (gender is coded M=0, F=1 in the numeric array). About 3% of the numeric cells are blank -> nan.",
+  "columns": {
+   "student_id": "ID 1001-1600",
+   "age": "years",
+   "gender": "text M/F in the csv; 0/1 in `students`",
+   "height_cm": "",
+   "weight_kg": "",
+   "math": "score 0-100",
+   "physics": "score 0-100",
+   "chemistry": "score 0-100",
+   "english": "score 0-100",
+   "attendance_pct": "0-100",
+   "study_hours": "hours per day"
+  }
+ },
+ "sensor": {
+  "file": "data/sensor.csv",
+  "rows": 10000,
+  "desc": "10,000 one-minute readings from an environment sensor (about 7 days). Contains blanks (nan), -999 error codes in humidity, temperature spikes, vibration bursts and a 40-minute outage.",
+  "columns": {
+   "t_sec": "seconds since start",
+   "temperature_c": "deg C",
+   "humidity_pct": "% (-999 = sensor error)",
+   "pressure_hpa": "hPa",
+   "vibration_g": "g"
+  }
+ },
+ "houses": {
+  "file": "data/houses.csv",
+  "rows": 400,
+  "desc": "400 house sales for the regression project: price (in thousands) depends on area, bedrooms and age plus noise.",
+  "columns": {
+   "area_sqft": "living area",
+   "bedrooms": "count",
+   "age_years": "age of the house",
+   "price_k": "sale price in thousands (target)"
+  }
+ }
+}
